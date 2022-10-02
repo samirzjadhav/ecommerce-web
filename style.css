@@ -13,6 +13,12 @@ h1 {
   color: #222;
 }
 
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
 h4 {
   font-size: 20px;
   color: #222;
@@ -54,6 +60,10 @@ body {
   padding: 20px 80px;
   background: #e3e6f3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -94,3 +104,35 @@ body {
 }
 
 /* Home page */
+#hero {
+  background-image: url(./img/hero4.png);
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  background-image: url(./img/button.png);
+  padding: 14px 80px 14px 65px;
+  background-color: transparent;
+  color: #088178;
+  border: 0px;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
