@@ -385,6 +385,7 @@ body {
   background-size: cover;
   background-position: center;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 #banner3 .banner-box2 {
@@ -405,4 +406,56 @@ body {
   color: rgb(202, 24, 24);
   font-weight: 800;
   font-size: 15px;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(./img/banner/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+
+#newsletter span {
+  color: #ffbd27;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+  white-space: nowrap;
+  background-color: #088178;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
