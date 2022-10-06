@@ -551,7 +551,23 @@ footer .copyright {
 }
 
 #pagination {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a:nth-child(3) {
+  padding: 10px 15px;
 }
 
 /* Start Media Query  */
