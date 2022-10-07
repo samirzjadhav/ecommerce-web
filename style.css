@@ -632,6 +632,10 @@ footer .copyright {
   color: #fff;
 }
 
+.thumbnail-selected {
+  border: 1px solid gray;
+}
+
 /* Start Media Query  */
 @media (max-width: 799px) {
   .section-p1 {
@@ -805,6 +809,21 @@ footer .copyright {
   }
 
   #newsletter .form {
+    width: 100%;
+  }
+
+  /* Single Product */
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #prodetails .single-pro-details {
     width: 100%;
   }
 }

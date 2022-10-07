@@ -79,6 +79,14 @@
         <div class="small-img-group">
           <div class="small-img-col">
             <img
+              src="./img/products/f1.jpg"
+              width="100%"
+              class="small-img thumbnail-selected"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
               src="./img/products/f5.jpg"
               width="100%"
               class="small-img"
@@ -96,14 +104,6 @@
           <div class="small-img-col">
             <img
               src="./img/products/f3.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="./img/products/f4.jpg"
               width="100%"
               class="small-img"
               alt=""
@@ -337,11 +337,41 @@
       </div>
       <div class="copyright">&copy; 2022, Created By Sameer Jadhav</div>
     </footer>
+    <script>
+      const mainImage = document.getElementById("MainImg");
+      const thumbnails = document.getElementsByClassName("small-img");
 
+      Array.from(thumbnails).forEach((thumbnail) => {
+        thumbnail.addEventListener("click", () => {
+          mainImage.setAttribute("src", thumbnail.getAttribute("src"));
+
+          Array.from(thumbnails).forEach((thumbnail) =>
+            thumbnail.classList.remove("thumbnail-selected")
+          );
+
+          thumbnail.classList.add("thumbnail-selected");
+        });
+      });
+
+      //   const mainImg = document.getElementById("MainImg");
+      //   const smallImg = document.getElementsByClassName("small-img");
+
+      //   smallImg[0].onclick = function () {
+      //     mainImg.setAttribute("src", smallImg[0].src);
+      //   };
+
+      //   smallImg[1].onclick = function () {
+      //      mainImg.setAttribute("src", smallImg[1].src)
+      //   };
+
+      //   smallImg[2].onclick = function () {
+      //     mainImg.setAttribute("src", smallImg[2].src)
+      //   };
+
+      //   smallImg[3].onclick = function () {
+      //     mainImg.setAttribute("src", smallImg[3].src)
+      //   };
+    </script>
     <script src="./script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/01b0f7f545.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
