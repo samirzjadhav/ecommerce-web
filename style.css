@@ -785,6 +785,24 @@ footer .copyright {
   font-size: 14px;
 }
 
+#contact-details .map {
+  width: 65%;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+
 #form-details form {
   width: 65%;
   display: flex;
@@ -804,6 +822,30 @@ footer .copyright {
 #form-details form button {
   background-color: #088178;
   color: #fff;
+}
+
+#form-details .people div {
+  padding-bottom: 25px;
+}
+
+#form-details .people div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#form-details .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
 }
 
 /* Start Media Query  */
@@ -927,6 +969,20 @@ footer .copyright {
   #about-head div {
     width: 100%;
   }
+
+  /* Contact Page */
+
+  #contact-details .details {
+    margin-right: 2rem;
+  }
+
+  #form-details {
+    padding: 40px;
+  }
+
+  #form-details form {
+    width: 50%;
+  }
 }
 
 @media (max-width: 477px) {
@@ -1048,5 +1104,31 @@ footer .copyright {
 
   #about-app .video {
     width: 100%;
+  }
+
+  /* Contact Page */
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #contact-details .details {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #contact-details .map {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
