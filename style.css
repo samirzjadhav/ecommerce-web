@@ -849,11 +849,13 @@ footer .copyright {
 }
 
 /* Cart Table */
+
 #cart {
+  overflow-x: auto;
 }
 
 #cart table {
-  width: 100%;
+  width: 200%;
   border-collapse: collapse;
   table-layout: fixed;
   white-space: nowrap;
