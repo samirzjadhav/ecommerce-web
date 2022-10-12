@@ -855,7 +855,7 @@ footer .copyright {
 }
 
 #cart table {
-  width: 200%;
+  width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
   white-space: nowrap;
@@ -1106,6 +1106,10 @@ footer .copyright {
   #cart .section-p1 {
     padding: 20px 40px;
   }
+
+  #cart table {
+    width: 150%;
+  }
 }
 
 @media (max-width: 477px) {
@@ -1267,5 +1271,9 @@ footer .copyright {
   #subtotal {
     width: 100%;
     padding: 20px;
+  }
+
+  #cart table {
+    width: 200%;
   }
 }
